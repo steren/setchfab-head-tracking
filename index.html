@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://d2f25wgezub9nf.cloudfront.net/api/sketchfab-viewer-1.0.0.js"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.13.1/underscore-min.js"></script>
+  <script src="https://rawgit.com/auduno/headtrackr/master/headtrackr.js"></script>
+
+  <style>
+    html, body {
+        height:100%;
+        background: black;
+        color: white;
+    }
+    #api-frame {
+        border: 0;
+    }
+  </style>
+  
+</head>
+<body>
+  <iframe id="api-frame" style="width: 100%; height:90%;" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+  
+  <canvas id="compare" width="320" height="240" style="display:none"></canvas>
+  <video id="vid" autoplay loop width="320" height="240" style="display:none"></video>
+  
+  <p id='gUMMessage'></p>
+  <p>Status : <span id='headtrackerMessage'></span></p>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
